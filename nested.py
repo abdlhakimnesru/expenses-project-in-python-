@@ -286,14 +286,47 @@
  
 #  print(reverses_the_order("welcom to my python program"))    
 
-def  reverses_the_order(revword):
-    if isinstance(revword,(str)):
-        split_revword=revword.split()
-        reversed_split_revword = split_revword[::-1]
-        joint_split_revword = " ".join(reversed_split_revword)
-    return joint_split_revword
-print(reverses_the_order("welcom to my python program"))
+# def  reverses_the_order(revword):
+#     if isinstance(revword,(str)):
+#         split_revword=revword.split()
+#         reversed_split_revword = split_revword[::-1]
+#         joint_split_revword = " ".join(reversed_split_revword)
+#     else:
+#         return("enter  only strings")
+#     return joint_split_revword
+# print(reverses_the_order("welcom to my python program"))
          
+
+
+def palindrome_check(palindrome):
+    return  palindrome == palindrome[::-1]
+
+print(palindrome_check("racecar"))
+print(palindrome_check("abdu"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    
