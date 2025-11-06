@@ -289,8 +289,8 @@
 # def  reverses_the_order(revword):
 #     if isinstance(revword,(str)):
 #         split_revword=revword.split()
-#         reversed_split_revword = split_revword[::-1]
-#         joint_split_revword = " ".join(reversed_split_revword)
+#         reversed_split_revword = split_revword[::-1] 
+#         joint_split_revword  =  " ".join(reversed_split_revword)
 #     else:
 #         return("enter  only strings")
 #     return joint_split_revword
@@ -298,11 +298,51 @@
          
 
 
-def palindrome_check(palindrome):
-    return  palindrome == palindrome[::-1]
+# def palindrome_check(palindrome):
+#     return  palindrome == palindrome[::-1]
 
-print(palindrome_check("racecar"))
-print(palindrome_check("abdu"))
+# print(palindrome_check("racecar"))
+# print(palindrome_check("abdu"))
+
+# numbers=[3,4,56,4,6,78,98,3,78,23]
+# uniqe_number=[]
+
+
+# for numb in numbers:
+#     if numb not in uniqe_number:
+#         uniqe_number.append(numb)
+
+# print(uniqe_number)
+
+# def remove_dplicat(numbers):
+#     result=[]
+#     for numb in numbers:
+#         if  numb not in result:
+#             result.append(numb)
+#     return result
+     
+        
+# print(remove_dplicat([2,3,4,5,4,3,6,78,9,87,67,34,5,34]))
+
+
+
+def sum_all_digits(numbers):
+    total=0
+    if isinstance(numbers,(int)):
+        for num in str(numbers):
+            total+=int(num)
+        return total
+    else:
+        ("enter integers")
+
+tot=sum_all_digits((234567578)) 
+print(tot)
+    
+
+
+
+
+
 
 
 
