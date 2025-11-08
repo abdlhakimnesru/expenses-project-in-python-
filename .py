@@ -1,38 +1,47 @@
-import random
-import os
-questions = {
-"What is the keyword to define a function in Python?": "def",
-"Which data type is used to store True or False values?": "boolean",
-"What is the correct file extension for Python files?": ".py",
-"Which symbol is used to comment in Python?": "#",
-"What function is used to get input from the user?": "input",
-"How do you start a for loop in Python?": "for",
-"What is the output of 2 ** 3 in Python?": "8",
-"What keyword is used to import a module in Python?": "import",
-"What does the len() function return?": "length",
-"What is the result of 10 // 3 in Python?": "3"
-}
 
-def questions_sample_ovr():
-    questions_list=list(questions)
-    total_quastion=6
-    score=0
-
-    random_questions=random.sample(questions_list, total_quastion)
-    for inx, question in enumerate(random_questions):
-        print(f"{inx+1},{question}")
-
-        user_answer=input("enter the correct answer")
-        correct_answer=questions[question]
-
-        if user_answer == correct_answer:
-            print("correct\n")
+def main():
+    while True:
+        print("\nSimple Expense Tracker")
+        print("1. Add Expense")
+        print("2. View Expenses")
+        print("3. Exit")
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            desc = input("Enter description: ")
+            amt = input("Enter amount: ")
+            add_expense(desc, amt)
+        elif choice == "2":
+            view_expenses()
+        elif choice == "3":
+            print("Goodbye!")
+            break
         else:
-            print(f"wrong: the correect answer is {correct_answer}" )
-        
-        print(f"game over {score}/{total_quastion}")
+            print("Invalid choice. Try again.")
 
 
-questions_sample_ovr()
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

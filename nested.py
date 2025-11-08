@@ -181,9 +181,7 @@
 # The year is divisible by 4,
 
 # But not divisible by 100,
-
 # Except when it is also divisible by 400.
-
 # def  leap_year_happens(year):
 #     if isinstance(year,(float, int)):
 #         if (year % 4 ==0 and  year % 100 != 0) or (year % 400 ==0):
@@ -197,25 +195,15 @@
 
 
 
-
-
-
-
 # Write a Python function that:
 
 # Takes a list of numbers as input.
 
 # Returns the sum of all even numbers in the list.
-
 # ✅ Requirements:
-
 # Check that the input is a list.
-
 # Ignore non-number elements.
-
 # If the list is empty or has no even numbers, return 0.
-
-
 # def sum_even_num(numbers):
 #     total=0
 #     if isinstance(numbers,list):
@@ -354,17 +342,38 @@
 # print(max_min([23,45,67,4,67,3,78]))
 # Write a Python function that counts the number of vowels (a, e, i, o, u) in a given string.
 
-def number_of_vowels(string):
-    count=0
-    vowel= "aeiouAEIOU"
-    if isinstance(string,str):
-        for char in string:
-            if char in vowel:
-                count += 1
-        return count
-    else:
-        return ("strings")
-print(number_of_vowels("hello world  python"))
+# def number_of_vowels(string):
+#     count=0
+#     vowel= "aeiouAEIOU"
+#     if isinstance(string,str):
+#         for char in string:
+#             if char in vowel:
+#                 count += 1
+#         return count
+#     else:
+#         return ("strings")
+# print(number_of_vowels("hello world  python"))
+
+
+# # Write a Python function that calculates the factorial of a given non-negative integer n.
+# # Factorial of n (written as n!) is:
+
+# def calculates_the_factorial(factorial):
+#     if isinstance(factorial,(int,float)):
+#         if factorial < 0:
+#             return "Factorial is not defined for negative numbers."
+#         elif factorial ==0:
+#             return 1
+#         elif factorial >= 1:
+#             return  factorial*calculates_the_factorial(factorial-1)
+        
+#     else:
+#         return ("enter positive intigers")
+         
+# print(calculates_the_factorial(6))
+
+
+
 
 
 
